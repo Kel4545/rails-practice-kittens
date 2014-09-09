@@ -8,3 +8,5 @@ Rails.application.routes.draw do
   resources :kittens
   resources :kitten_categories
 end
+
+#One off route don't use resources
