@@ -1,5 +1,9 @@
 class KittenCategoriesController < ApplicationController
 
+  def show
+    @kitten = Kitten.all
+  end
+
   def new
    @kitten_category = KittenCategory.new
   end

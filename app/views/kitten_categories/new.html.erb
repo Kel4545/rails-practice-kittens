@@ -1,3 +1,10 @@
+<% if flash[:error] %>
+  <p class="red"><%= flash[:error] %></p>
+<% end %>
+<br/><br/>
+
+<%= image_tag Kitten.find(params[:id]).image %>
+
 
 <%= form_for @kitten_category, url: kitten_categories_path do |f| %>
  <%= f.collection_select :category, Category.all, :id, :name %>
